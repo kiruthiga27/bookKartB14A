@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-3" *ngFor="let data of productList">
+            
+                <mat-card class="example-card">
+
+                    <img class="example-header-image" src="{{url}}{{data.coverFileName}}">
+
+
+                    <mat-card-content class="content">
+                        <a href><strong>
+                                <div class="types"> {{data.title}}</div>
+                            </strong></a><br>
+
+                        <p> {{data.price | currency:"INR"}} </p>
+
+                        <br>
+                        
+                        <button mat-raised-button color="primary" class="addTo"><i class="fas fa-shopping-cart "></i>Add to
+                            Cart</button>
+
+                    </mat-card-content>
+                </mat-card>
+         
+
+
+
+        </div>
+
+
+
+    </div>
+
+</div>
