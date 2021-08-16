@@ -16,7 +16,7 @@ p{
 .addTo{
     text-align: center;
     margin-left: 25%;
-    margin-bottom: 10%;
+    margin-bottom: 30%;
 }
 
 .types{
@@ -38,71 +38,34 @@ p{
 
 }
 
-// .example-header-image:hover{
-//     cursor: pointer;
-// }
+mat-card span.only-show-on-hover{
+    visibility:hidden;
+}
+
+mat-card:hover span.only-show-on-hover{
+    position: absolute;
+    top: 150px;
+    left: 120px;
+    visibility: visible;
+}
+
+
 
 .example-header-image:hover div{
     width: 150px;
  padding: 8px 15px;
  visibility: visible;
- opacity: 0.7
+ opacity: 0.7;
 
 }
-// .cls{
-   
-//     display: inline-block;
-//     margin-left: 90px;
-//     width: 300px;
-// }
 
 .fas {
     margin-right: 10px;
 }
 
+.price{
+    margin-left: 10%;
+
+}
 
 
-//////////////////////////////////////////////////
-
-
-
-
-// .cls{
-//     width:300px;
-//     display:inline-block;
-//     margin-left:70px;
-
-// }
-// .example-card{
-//     max-width:170px;
-//     max-height:370px;
-    
-//     display:inline-block;
-//     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-//     margin:5px 5px;
-// }
-
-// .example-header-image{
-//    width:170px;
-//    height:220px;
-   
-// }
-// .types{
-    
-   
-//     overflow: hidden;
-//     text-overflow: ellipsis; 
-   
-// }
-
-
-// p{
-//     display: inline-block;
-    
-// }
-// .green{
-//     background-color: green;
-// }
-// .red{
-//     background-color: red;
-// }

@@ -9,6 +9,7 @@ import { ProductService } from '../product.service';
 export class ProductcartComponent implements OnInit {
 productList:any;
 click:boolean=false;
+selected=false;
 url="https://bookcart.azurewebsites.net/Upload/"
   constructor(private product:ProductService) { }
 
@@ -23,18 +24,13 @@ url="https://bookcart.azurewebsites.net/Upload/"
     })
   }
 
-  //export class ProductcartComponent implements OnInit {
-  //constructor() { }
 
-  //@Input() mat-icon: boolean;
-  //@Output() mat-iconChange = new EventEmitter<boolean>();
-
-  //ngOnInit() {
-  //}
-
-  //public togglemat-icon() {
-   // this.mat-icon = this.mat-icon;
-    //this.mat-iconChange.emit(this.mat-icon);
-//}
+toggleselected(){
+  if(this.selected == false){
+  this.selected = true;
+  }else{
+    this.selected = false; 
+  }
+}
 
 }
